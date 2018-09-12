@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html id="html" lang="pt-br">
+
+<head>
+    <title>Ricardo - Trello</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/tablet.css">
+    <link rel="stylesheet" type="text/css" href="css/desktop.css">
+    <link rel="stylesheet" type="text/css" href="css/smartphone.css">
+    <link rel="stylesheet" type="text/css" href="css/large_desktop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="bodyPagina">
+
+    <div class="container-fluid sticky-top">
+        <div class="row">
+            <div id="paiNav" class="col-12 col-sm-12 col-md-12 col-lg-12">
+
+                <nav id="nav" class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a id="nomeUsuario" class="navbar-brand" href="#"></a>
+                    <a id="checkpoint" class="nav-link"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li id="boards" class="nav-item">
+                                <a class="nav-link" href="#">Quadros</a>
+                            </li>
+                            <li id="listasCelular" class="nav-item d-md-none d-block">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li id="deslogar" class="nav-item">
+                                <span class="nav-link" id="logout">Sair<span class="invi">_</span><i class="fa fa-sign-out"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="inicioQuadros">
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div id="caixaModal" class="modal-content bg-light">
+
+                    <div class="modal-header">
+                        <h5>Escolha a cor do quadro:</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div id="modalCores" class="modal-body">
+                        <div id="lugarCores">
+                            <span id="fundoAzul" class="seletorCor fundos bg-info"><span class="invi">____</span></span>
+                            <span id="fundoVerde" class="seletorCor fundos bg-success"><span class="invi">____</span></span>
+                            <span id="fundoVermelho" class="seletorCor fundos bg-danger"><span class="invi">____</span></span>
+                            <span id="fundoAmarelo" class="seletorCor fundos bg-warning"><span class="invi">____</span></span>
+                            <span id="fundoBranco" class="seletorCor fundos bg-light"><span class="invi">____</span></span>
+                        </div>
+
+                        <div id="formModalCores">
+                            <form id="formQuadro">
+                                <input autocomplete="off" autofocus required id="nomeQuadro" name="name" type="text" placeholder="Adicione um titulo ao quadro"
+                                    class="form-control input-md">
+                                <input id="botaoQuadro" class="btn btn-info" type="submit" value="Criar">
+                            </form>
+                        </div>
+
+                        <div id="confirmarCor">
+                            <button id="botaoCor" class="btn btn-dark" data-dismiss="modal">Confirmar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modalRenomear">
+            <div class="modal-dialog">
+                <div id="caixaModal" class="modal-content bg-light">
+
+                    <div class="modal-header">
+                        <h4 id="tituloRenomearQuadro">Renomear</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form id="formRenomearQuadro">
+                            <input id="inputRenomear" autocomplete="off" autofocus required name="name" type="text" placeholder="novo nome" class="form-control input-md">
+                            <input id="botaoRenomear" class="btn btn-info" type="submit" value="Renomear">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div id="grupoQuadros" class="row">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="dentroQuadro" class="container-fluid">
+
+        <div id="erroTag" class="alert alert-danger">
+            <span id="msgErroTag">Essa tag ja foi adicionada!</span> 
+            <button id="fecharErroTag"type="button" class="close" style="position: absolute; right: 2%;">&times;</button>
+        </div>
+
+        <p><h4 id="checkpointCell"></h4></p>
+
+        <div id="grupoListas"></div>
+
+    </div>
+
+    <div class="modal" id="modalRenomearLista">
+        <div class="modal-dialog">
+            <div id="caixaModal" class="modal-content bg-light">
+
+                <div class="modal-header">
+                    <h4 id="tituloRenomearLista">Renomear</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="formRenomearLista">
+                        <input id="inputRenomearLista" autocomplete="off" autofocus required name="name" type="text" placeholder="novo nome" class="form-control input-md">
+                        <input id="botaoRenomear" class="btn btn-info" type="submit" value="Renomear">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modalMover">
+        <div class="modal-dialog">
+            <div class="modal-content bg-light">
+
+                <div class="modal-header">
+                    <h4>Escolha a lista:</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+                          Mover
+                        </button>
+                        <div class="dropdown-menu" id="opcoesMoverCartao">
+                        
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modalRenomearCard">
+        <div class="modal-dialog">
+            <div id="caixaModal" class="modal-content bg-light">
+
+                <div class="modal-header">
+                    <h4 id="tituloRenomearCartao">Renomear</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="formRenomearCard">
+                        <input id="inputRenomearCard" autocomplete="off" autofocus required name="name" type="text" placeholder="novo nome" class="form-control input-md">
+                        <input class="btn btn-info" id="botaoRenomearCard" type="submit" value="Renomear">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modalCard">
+        <div class="modal-dialog">
+            <div class="modal-content bg-light">
+
+                <div class="modal-header">
+                    <h4 id="tituloCartao"></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body" style="padding: 3%;">
+
+                    <div id="data"></div>
+
+                    <div id="comecarComentarios">
+                        <div>
+                            <i class="fa fa-comment-o"></i>
+                            Adicionar comentários
+                        </div>
+                    </div>
+
+                    <div id="formComentariosBody" style="width: 70%;"></div>
+
+                    <div id="menuCard"></div>
+
+
+                    <div id="comentariosCardsTitulo">
+                        <div>
+                            <i class="fa fa-commenting-o"></i>Comentários criados
+                        </div>
+                    </div>
+
+                    <div id="paiComentariosCardBody">
+                        <div id="comentariosCardBody">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="js/quadros.js"></script>
+<script src="js/listas.js"></script>
+<script src="js/cartoes.js"></script>
+<script src="js/script.js"></script>
+
+
+</html>

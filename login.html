@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Ricardo - Trello</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+
+    <div id="tamanho">
+        <form id="formulario" style="max-width:500px;margin:auto">
+            <h2 style="text-align: center; margin-bottom: 4%;">Login</h2>
+
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input id="username" class="input-field" autofocus required type="text" placeholder="Nome de usuário" name="username">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" id="password" required type="password" placeholder="Senha" name="password">
+            </div>
+
+            <div class="help-block">
+                <a href="cadastro.html" target="_self">Não possui cadastro? Criar conta</a>
+            </div>
+
+            <button type="submit" class="btn btn-info" style="margin-bottom: 2%;">Confirmar</button>
+            <button id="botaoLimpar" class="btn btn-danger" type="reset">Limpar</button>
+        </form>
+    </div>
+
+    <script src="js/scriptLogin.js"></script>
+
+
+</html>

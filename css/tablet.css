@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+    .listas {
+        width: 48%;
+        margin-left: 1%;
+        margin-bottom: 2%;
+    }
+
+    #dentroQuadro {
+        padding: 0%;
+    }
+
+    #body-lista {
+        overflow-y: auto;
+        overflow-x: hidden;
+        white-space: nowrap;
+        clear: both;
+        max-height: 50vh;
+        height: auto;
+    }
+
+    #checkpointCell {
+        display: none;
+    }
+
+    #botaoCard {
+        width: 30%;
+        padding: 1%;
+    }
+
+    #checkpoint {
+        display: inline;
+    }
+
+    #criarLista {
+        margin-left: 1%;
+        width: 48%;
+    }
+
+    #collapseLista {
+        position: absolute;
+        right: 0%;
+        margin-right: 4%;
+    }
+
+    i+ul {
+        float: right;
+        margin-right: 6%;
+    }
+
+    .collapse {
+        list-style-type: none;
+    }
+
+    #iconesLista {
+        display: none;
+    }
+
+    #setaEsquerda {
+        display: none;
+    }
+
+    #setaDireita{
+        display: none;
+        position: absolute;
+        right: 0%; 
+        margin-right: 2%;
+    }
+
+    #checkpoint {
+        max-width: 35ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #lul {
+        max-width: auto;
+        text-overflow: none;
+        overflow-y: auto;
+        max-height: 50px;
+        white-space: initial;
+    }
+
+    #quadro0 {
+        position: fixed;
+        right: 0%;
+        bottom: 0%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        border: 1px solid #17a2b8;   
+        padding: 1% 2%;
+        border-radius: 100%; 
+        font-size: 30px;
+        width: 11%;
+        height: 11%;
+        color: white;
+        background-color: #17a2b8;
+    }
+    
+}

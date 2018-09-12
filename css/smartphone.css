@@ -1,0 +1,153 @@
+@media (max-width: 576px) 
+{
+
+    #checkpoint {
+        display: none;
+    }
+   
+       #checkpointCell {
+           display: block;
+           margin: 0%;
+           max-width: 30ch;
+           overflow: hidden;
+           text-overflow: ellipsis;
+           white-space: nowrap;
+       }
+  
+    .listas {
+        margin-bottom: 4%;
+        width: auto;
+        height: auto !important;
+        margin-left: 0%;
+    }
+
+    #body-lista {
+        overflow-x: hidden;
+        clear: none;
+        overflow-y: hidden;
+        max-height: none;
+        height: auto;
+    }
+
+    #inicioQuadros {
+        height: 94vh;
+        background-image: linear-gradient(to left top, #f9ecf9, #d6c9d8, #b4a6b8, #93859a, #72667c);
+        overflow-y: auto;
+        overflow-x: hidden;
+        white-space: nowrap;
+        clear: both;
+    }
+
+    #lul {
+        max-width: auto;
+        text-overflow: none;
+        overflow-y: auto;
+        max-height: 50px;
+        white-space: initial;
+    }
+
+    #setaEsquerda {
+        display: none;
+    }
+
+    #setaDireita{
+        display: none;
+        position: absolute;
+        right: 0%; 
+        margin-right: 2%;
+    }
+
+    #setaCima {
+        display: inline;
+        position: absolute; 
+        top: 0%; 
+        
+    }
+    
+
+    #setaBaixo {
+        display: inline;
+        position: absolute; 
+        bottom: 0%;
+       
+    }
+
+    .listas {
+        width: 100%;
+    }
+
+    #grupoListas {
+        position: relative;
+    }
+
+    #iconesLista {
+        display: none;
+    }
+
+    #collapseLista {
+        position: absolute;
+        right: 0%;
+        margin-right: 4%;
+    }
+
+    i+ul {
+        float: right;
+        margin-right: 6%;
+    }
+
+    .collapse {
+        list-style-type: none;
+    }
+
+    #grupoListas {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+    #botaoCard {
+        width: 30%;
+        padding: 1%;
+    }
+
+    #dentroQuadro {
+        padding: 0% 2%;
+    }
+
+    #criarLista {
+        width: 80%;
+        margin: 0%;
+    }
+
+    #quadro0 { 
+        position: fixed;
+        right: 0%;
+        bottom: 0%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        border: 1px solid tomato;
+        padding: 1% 2%;
+        border-radius: 100%; 
+        font-size: 30px;
+        width: 20%;
+        height: 10%;
+        color: white;
+        background-color:tomato;
+    }
+
+    #lul {
+        overflow-y:auto;
+        overflow-x: hidden;
+    }
+
+    #tags {
+        margin-right: 1%;
+    }
+
+    
+
+    /*#botaoModalCard {
+        margin-right: 35%;
+    }*/
+
+}
+

@@ -1,0 +1,121 @@
+body {
+   /* border: 1px solid blue; */
+    height: 100vh;
+    background-image: linear-gradient(to left top, #571423, #621221, #6d101f, #770f1b, #801015);
+}
+
+h2 {
+    color: white;
+}
+
+#mensagemErro {
+    color: white !important;
+}
+
+.help-block {
+    margin-bottom: 2%;
+    color: white !important;
+}
+
+.help-block a {
+    color: white !important;
+}
+
+.help-block a:visited {
+    color: white;
+}
+
+#sucesso {
+    position: absolute; 
+    top: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        .input-container {
+            
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .icon {
+            padding: 15px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+        }
+        
+        .input-field:focus {
+            border: 2px solid dodgerblue;
+        }
+        
+        /* Set a style for the submit button */
+        
+        
+        .btn:hover {
+            opacity: 1;
+        }
+
+        @media (min-width: 768px) 
+{ 
+    #tamanho {
+        width: 50%;
+    }
+
+    .btn-info {
+        background-color: dodgerblue;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        width: 49%;
+        opacity: 0.9;
+        margin: 0% !important;
+    }
+
+    .btn-danger {
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        width: 49%;
+        opacity: 0.9;
+    }
+}
+
+ @media (max-width: 768px) 
+{ 
+    #tamanho {
+        width: 90%;
+    }
+
+    .btn-info {
+        background-color: dodgerblue;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .btn-danger {
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+}

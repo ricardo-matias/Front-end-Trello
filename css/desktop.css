@@ -1,0 +1,125 @@
+@media (min-width: 768px) 
+{
+
+    #checkpoint {
+        position: absolute;
+        left: 40%;
+        font-size: 25px;
+        top: -4%;
+        color: white;
+    }
+
+    #checkpointCell {
+        display: none;
+    }
+
+    .listas {
+        margin-left: 1%;
+        margin-right: 1%;
+        width: auto !important;
+    }
+
+    #body-lista {
+        overflow-y: auto;
+        overflow-x: hidden;
+        white-space: nowrap;
+        clear: both;
+        max-height: 68vh;
+        height: auto;
+    }
+
+    #setaEsquerda {
+        display: inline;
+        position: absolute; left: 0%; margin-left: 7%;
+    }
+
+    #setaDireita{
+        display: inline;
+        position: absolute; right: 0%; margin-right: 7%;
+    }
+
+    #checkpoint {
+        max-width: 30ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #grupoListas {
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+        clear: both;
+        height: 89vh;
+        margin-top: 1%;
+    }
+
+    #iconesLista {
+        position: absolute;
+        right: 0%;
+        margin-right: 5%;
+    }
+
+    #deslogar {
+        position: absolute;
+        right: 0%;
+        margin-right: 2%;
+    }
+
+    #iconesListaCell{
+        display: none;
+    }
+
+    #collapseLista {
+        display: none;
+    }
+
+    .collapse {
+        display: none;
+    }
+
+    #lul {
+        max-width: 22ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #quadro0 {
+        position: fixed;
+        right: 0%;
+        bottom: 0%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        border: 1px solid #17a2b8;
+        padding: 1% 2%;
+        border-radius: 100%; 
+        font-size: 30px;
+        width: 8%;
+        height: 10%;
+        color: white;
+        background-color:#17a2b8;
+    }
+
+    #quadro0:hover {
+        opacity: 0.8;
+    }
+
+   /* #botaoModalCard {
+        margin-right: 23%;
+    }*/
+
+    #criarLista {
+        margin-right: 1%;
+        width: auto;
+    }
+
+    #dentroQuadro {
+        padding: 0% !important;
+    }
+    
+    #botaoColLista {
+        display: none;
+    }
+
+}

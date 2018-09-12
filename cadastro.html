@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Ricardo - Trello</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/cadastro.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+  <div id="sucesso" class="alert alert-success">
+    Cadastro realizado com sucesso!
+  </div>
+
+  <div id="tamanho">
+    <form id="formulario" style="max-width:500px;margin:auto">
+      <h2 style="text-align: center; margin-bottom: 4%;">Cadastrar</h2>
+      <div class="input-container">
+        <i class="fa fa-user-circle  icon"></i>
+        <input class="input-field" required type="text" autofocus placeholder="Nome" name="name">
+      </div>
+
+      <label id="mensagemErro" class="control-label" for="username">
+        <div>Usuário ja existente, tente outro nome</div>
+      </label>
+
+      <div class="input-container">
+        <i class="fa fa-user icon"></i>
+        <input id="username" required class="input-field" type="text" placeholder="Nome de usuário" name="username">
+      </div>
+
+      <div class="input-container">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" required type="password" placeholder="Senha" name="password">
+      </div>
+
+      <div class="help-block">
+        <a href="login.html" target="_self">Você já é cadastrado? Faça login.</a>
+      </div>
+
+      <button type="submit" class="btn btn-info" style="margin-bottom: 2%;">Confirmar</button>
+      <button id="botaoLimpar" class="btn btn-danger" type="reset">Limpar</button>
+    </form>
+  </div>
+
+</body>
+
+<script src="js/scriptCadastro.js"> // http://www.henriquesantos.pro.br:8080/web1/trello.html </script>
+
+</html>
